@@ -610,6 +610,12 @@ namespace OpenRA.Mods.Common.Widgets.Logic
 			};
 
 			playerName.GetColor = () => player.Color;
+
+			var playerNameTooltip = playerName as LabelWithTooltipWidget;
+			if (playerNameTooltip != null)
+			{
+				playerNameTooltip.GetTooltipText = () => player.PlayerName;
+			}
 		}
 
 		public static string GetExternalIP(Session.Client client, OrderManager orderManager)

@@ -270,6 +270,7 @@ namespace OpenRA.Mods.Common.Widgets.Logic
 		{
 			combatStatsHeaders.Visible = true;
 			var template = SetupPlayerScrollItemWidget(combatPlayerTemplate, player);
+			template.IgnoreChildMouseOver = false;
 
 			LobbyUtils.AddPlayerFlagAndName(template, player);
 
@@ -340,6 +341,7 @@ namespace OpenRA.Mods.Common.Widgets.Logic
 		{
 			economyStatsHeaders.Visible = true;
 			var template = SetupPlayerScrollItemWidget(economyPlayerTemplate, player);
+			template.IgnoreChildMouseOver = false;
 
 			LobbyUtils.AddPlayerFlagAndName(template, player);
 
@@ -376,6 +378,7 @@ namespace OpenRA.Mods.Common.Widgets.Logic
 		{
 			basicStatsHeaders.Visible = true;
 			var template = SetupPlayerScrollItemWidget(basicPlayerTemplate, player);
+			template.IgnoreChildMouseOver = false;
 
 			LobbyUtils.AddPlayerFlagAndName(template, player);
 
